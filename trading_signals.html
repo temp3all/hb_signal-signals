@@ -3,69 +3,60 @@
 <head>
     <title>Trading Signals Report</title>
     <style>
-        body { font-family: Arial; margin: 20px; background: #f5f5f5; }
-        .header { background: #2c3e50; color: white; padding: 15px; border-radius: 5px; }
-        table { width: 100%; border-collapse: collapse; background: white; margin-top: 20px; }
-        th { background: #34495e; color: white; padding: 12px; text-align: left; }
-        td { padding: 10px; border-bottom: 1px solid #ddd; }
-        tr:hover { background: #f9f9f9; }
-        .buy { color: green; font-weight: bold; }
-        .sell { color: red; font-weight: bold; }
-        .hold { color: orange; font-weight: bold; }
-        .footer { margin-top: 20px; color: #666; font-size: 12px; }
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+        .BUY { color: green; font-weight: bold; }
+        .SELL { color: red; font-weight: bold; }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Trading Signals Report</h1>
-        <p>Generated: 2026-05-28T11:22:56.637697</p>
-    </div>
+    <h1>Trading Signals Report</h1>
+    <p>Generated: 2026-05-28 13:50:59 UTC</p>
     <table>
         <tr>
             <th>Symbol</th>
-            <th>Signal</th>
             <th>Price</th>
-            <th>Strength</th>
-            <th>RSI</th>
+            <th>Change %</th>
+            <th>Signal</th>
+            <th>Confidence</th>
         </tr>
         <tr>
-            <td>BTC/USD</td>
-            <td class="buy">BUY</td>
-            <td>$42850</td>
-            <td>78.00%</td>
-            <td>62</td>
+            <td>BTC</td>
+            <td>$45229.5</td>
+            <td>-7.82%</td>
+            <td class="SELL">SELL</td>
+            <td>0.9</td>
         </tr>
         <tr>
-            <td>ETH/USD</td>
-            <td class="sell">SELL</td>
-            <td>$2310</td>
-            <td>65.00%</td>
-            <td>71</td>
+            <td>ETH</td>
+            <td>$45590.54</td>
+            <td>-8.53%</td>
+            <td class="SELL">SELL</td>
+            <td>0.61</td>
         </tr>
         <tr>
-            <td>SOL/USD</td>
-            <td class="buy">BUY</td>
-            <td>$138.5</td>
-            <td>72.00%</td>
-            <td>58</td>
+            <td>XRP</td>
+            <td>$25899.38</td>
+            <td>8.82%</td>
+            <td class="BUY">BUY</td>
+            <td>0.85</td>
         </tr>
         <tr>
-            <td>DOGE/USD</td>
-            <td class="hold">HOLD</td>
-            <td>$0.118</td>
-            <td>54.00%</td>
-            <td>55</td>
+            <td>SOL</td>
+            <td>$37012.63</td>
+            <td>-2.07%</td>
+            <td class="SELL">SELL</td>
+            <td>0.72</td>
         </tr>
         <tr>
-            <td>XRP/USD</td>
-            <td class="buy">BUY</td>
-            <td>$2.45</td>
-            <td>69.00%</td>
-            <td>60</td>
+            <td>DOGE</td>
+            <td>$44386.36</td>
+            <td>7.04%</td>
+            <td class="BUY">BUY</td>
+            <td>0.56</td>
         </tr>
     </table>
-    <div class="footer">
-        <p><strong>Disclaimer:</strong> These signals are for informational purposes only. Always conduct your own research before trading.</p>
-    </div>
 </body>
 </html>
