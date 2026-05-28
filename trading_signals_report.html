@@ -1,63 +1,267 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Trading Signals Report</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        table { border-collapse: collapse; width: 100%; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #333; }
+        table { border-collapse: collapse; width: 100%; background: white; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
         th { background-color: #4CAF50; color: white; }
-        .buy { color: green; font-weight: bold; }
-        .sell { color: red; font-weight: bold; }
-        .hold { color: orange; font-weight: bold; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .BUY { color: green; font-weight: bold; }
+        .SELL { color: red; font-weight: bold; }
+        .HOLD { color: orange; font-weight: bold; }
+        .summary { margin: 20px 0; padding: 15px; background: white; border-radius: 5px; }
     </style>
 </head>
 <body>
     <h1>Trading Signals Report</h1>
-    <p>Generated: 2026-05-28 11:58:27</p>
+    <p>Generated: 2026-05-28T14:23:04.606205</p>
+    <div class="summary">
+        <h2>Summary</h2>
+        <p>Total Signals: 20</p>
+        <p>BUY Signals: 9</p>
+        <p>SELL Signals: 7</p>
+        <p>HOLD Signals: 4</p>
+    </div>
     <table>
-        <tr>
-            <th>Ticker</th>
-            <th>Current Price</th>
-            <th>Signal</th>
-            <th>Strength</th>
-            <th>Target Price</th>
-        </tr>
-        <tr>
-            <td>BTC/USD</td>
-            <td>$67250</td>
-            <td><span class="buy">BUY</span></td>
-            <td>0.89</td>
-            <td>$60141.48</td>
-        </tr>
-        <tr>
-            <td>ETH/USD</td>
-            <td>$3450</td>
-            <td><span class="hold">HOLD</span></td>
-            <td>0.92</td>
-            <td>$2934.1</td>
-        </tr>
-        <tr>
-            <td>XRP/USD</td>
-            <td>$2.85</td>
-            <td><span class="sell">SELL</span></td>
-            <td>0.94</td>
-            <td>$2.67</td>
-        </tr>
-        <tr>
-            <td>SOL/USD</td>
-            <td>$145.2</td>
-            <td><span class="buy">BUY</span></td>
-            <td>0.68</td>
-            <td>$130.08</td>
-        </tr>
-        <tr>
-            <td>ADA/USD</td>
-            <td>$1.02</td>
-            <td><span class="buy">BUY</span></td>
-            <td>0.84</td>
-            <td>$0.94</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Asset</th>
+                <th>Timeframe</th>
+                <th>Signal</th>
+                <th>Confidence</th>
+                <th>Entry Price</th>
+                <th>Target</th>
+                <th>Stop Loss</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>2026-05-28T00:23:04.605640</td>
+                <td>SOL/USD</td>
+                <td>4H</td>
+                <td class="SELL">SELL</td>
+                <td>0.71</td>
+                <td>$40031.19</td>
+                <td>$78176.82</td>
+                <td>$92293.43</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-28T09:23:04.605684</td>
+                <td>SOL/USD</td>
+                <td>1H</td>
+                <td class="BUY">BUY</td>
+                <td>0.89</td>
+                <td>$46512.44</td>
+                <td>$33912.36</td>
+                <td>$37349.0</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-26T18:23:04.605700</td>
+                <td>SOL/USD</td>
+                <td>1H</td>
+                <td class="BUY">BUY</td>
+                <td>0.91</td>
+                <td>$73404.05</td>
+                <td>$41828.42</td>
+                <td>$61405.64</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-28T12:23:04.605711</td>
+                <td>SOL/USD</td>
+                <td>1H</td>
+                <td class="HOLD">HOLD</td>
+                <td>0.79</td>
+                <td>$26082.92</td>
+                <td>$50057.4</td>
+                <td>$61288.77</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-28T12:23:04.605720</td>
+                <td>BTC/USD</td>
+                <td>4H</td>
+                <td class="SELL">SELL</td>
+                <td>0.73</td>
+                <td>$74817.27</td>
+                <td>$89197.32</td>
+                <td>$19539.5</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-27T10:23:04.605728</td>
+                <td>BTC/USD</td>
+                <td>1D</td>
+                <td class="SELL">SELL</td>
+                <td>0.71</td>
+                <td>$35168.78</td>
+                <td>$27470.82</td>
+                <td>$53271.75</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-27T01:23:04.605736</td>
+                <td>SOL/USD</td>
+                <td>1D</td>
+                <td class="HOLD">HOLD</td>
+                <td>0.64</td>
+                <td>$32456.82</td>
+                <td>$92941.5</td>
+                <td>$54235.87</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-28T03:23:04.605747</td>
+                <td>ETH/USD</td>
+                <td>4H</td>
+                <td class="SELL">SELL</td>
+                <td>0.67</td>
+                <td>$29199.85</td>
+                <td>$48093.2</td>
+                <td>$69364.87</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-28T11:23:04.605760</td>
+                <td>ETH/USD</td>
+                <td>4H</td>
+                <td class="BUY">BUY</td>
+                <td>0.91</td>
+                <td>$46786.73</td>
+                <td>$76948.25</td>
+                <td>$71917.45</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-28T14:23:04.605768</td>
+                <td>ADA/USD</td>
+                <td>4H</td>
+                <td class="BUY">BUY</td>
+                <td>0.88</td>
+                <td>$47485.16</td>
+                <td>$74534.29</td>
+                <td>$32398.44</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-27T02:23:04.605775</td>
+                <td>ADA/USD</td>
+                <td>1H</td>
+                <td class="SELL">SELL</td>
+                <td>0.79</td>
+                <td>$70791.0</td>
+                <td>$102443.64</td>
+                <td>$54869.21</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-28T11:23:04.605782</td>
+                <td>XRP/USD</td>
+                <td>1D</td>
+                <td class="BUY">BUY</td>
+                <td>0.81</td>
+                <td>$32019.17</td>
+                <td>$75047.28</td>
+                <td>$20464.87</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-27T07:23:04.605789</td>
+                <td>ADA/USD</td>
+                <td>1D</td>
+                <td class="BUY">BUY</td>
+                <td>0.88</td>
+                <td>$33123.47</td>
+                <td>$38260.94</td>
+                <td>$36757.75</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-27T03:23:04.605796</td>
+                <td>SOL/USD</td>
+                <td>1H</td>
+                <td class="BUY">BUY</td>
+                <td>0.89</td>
+                <td>$86719.41</td>
+                <td>$86016.57</td>
+                <td>$64694.87</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-27T05:23:04.605803</td>
+                <td>BTC/USD</td>
+                <td>4H</td>
+                <td class="SELL">SELL</td>
+                <td>0.87</td>
+                <td>$81701.17</td>
+                <td>$57145.41</td>
+                <td>$82588.63</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-27T11:23:04.605810</td>
+                <td>ADA/USD</td>
+                <td>1D</td>
+                <td class="BUY">BUY</td>
+                <td>0.92</td>
+                <td>$35036.3</td>
+                <td>$104198.23</td>
+                <td>$90695.5</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-27T03:23:04.605817</td>
+                <td>ADA/USD</td>
+                <td>1D</td>
+                <td class="HOLD">HOLD</td>
+                <td>0.89</td>
+                <td>$20165.42</td>
+                <td>$33113.86</td>
+                <td>$82756.41</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-26T20:23:04.605826</td>
+                <td>SOL/USD</td>
+                <td>4H</td>
+                <td class="HOLD">HOLD</td>
+                <td>0.7</td>
+                <td>$23625.67</td>
+                <td>$97687.49</td>
+                <td>$77077.31</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-26T16:23:04.605833</td>
+                <td>ADA/USD</td>
+                <td>1D</td>
+                <td class="BUY">BUY</td>
+                <td>0.88</td>
+                <td>$55507.68</td>
+                <td>$96009.93</td>
+                <td>$92168.56</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-27T08:23:04.605840</td>
+                <td>BTC/USD</td>
+                <td>1D</td>
+                <td class="SELL">SELL</td>
+                <td>0.86</td>
+                <td>$99138.54</td>
+                <td>$93788.19</td>
+                <td>$70999.49</td>
+            </tr>
+
+        </tbody>
     </table>
 </body>
 </html>
