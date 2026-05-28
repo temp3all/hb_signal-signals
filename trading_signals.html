@@ -1,22 +1,90 @@
-
+<!DOCTYPE html>
 <html>
-<head><title>Trading Signals Report</title>
-<style>
-body { font-family: Arial, sans-serif; margin: 20px; }
-table { border-collapse: collapse; width: 100%; }
-td, th { border: 1px solid #ddd; padding: 8px; text-align: left; }
-th { background-color: #4CAF50; color: white; }
-.buy { background-color: #90EE90; }
-.sell { background-color: #FFB6C6; }
-.hold { background-color: #FFFFE0; }
-</style>
+<head>
+    <title>Trading Signals Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .header { background: #2c3e50; color: white; padding: 20px; border-radius: 5px; }
+        table { border-collapse: collapse; width: 100%; background: white; margin-top: 20px; }
+        th { background: #3498db; color: white; padding: 12px; text-align: left; }
+        td { padding: 10px; border-bottom: 1px solid #ddd; }
+        tr:hover { background: #ecf0f1; }
+        .buy { color: #27ae60; font-weight: bold; }
+        .sell { color: #e74c3c; font-weight: bold; }
+        .hold { color: #f39c12; font-weight: bold; }
+        .footer { margin-top: 20px; font-size: 12px; color: #7f8c8d; }
+    </style>
 </head>
 <body>
-<h1>Trading Signals Report</h1>
-<p>Generated: 2026-05-28 10:26:27</p>
-<table>
-<tr><th>Symbol</th><th>Price</th><th>RSI</th><th>MACD</th><th>Signal</th></tr>
-<tr><td>BTC/USD</td><td>$26780.51</td><td>33.35</td><td>NEUTRAL</td><td class='buy'>BUY</td></tr><tr><td>ETH/USD</td><td>$3064.54</td><td>50.32</td><td>BEARISH</td><td class='hold'>HOLD</td></tr><tr><td>SOL/USD</td><td>$3123.38</td><td>32.51</td><td>NEUTRAL</td><td class='buy'>BUY</td></tr><tr><td>XRP/USD</td><td>$3967.38</td><td>40.27</td><td>BULLISH</td><td class='buy'>BUY</td></tr><tr><td>ADA/USD</td><td>$3912.24</td><td>51.43</td><td>BEARISH</td><td class='hold'>HOLD</td></tr>
-</table>
+    <div class="header">
+        <h1>📊 Trading Signals Report</h1>
+        <p>Generated: 2026-05-28 11:03:50 UTC</p>
+    </div>
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Signal</th>
+            <th>Entry</th>
+            <th>Target</th>
+            <th>Stop Loss</th>
+            <th>Confidence</th>
+            <th>RSI</th>
+            <th>MACD</th>
+        </tr>
+        <tr>
+            <td><strong>BTC/USD</strong></td>
+            <td class="buy">BUY</td>
+            <td>$67250</td>
+            <td>$69500</td>
+            <td>$65800</td>
+            <td>85%</td>
+            <td>58</td>
+            <td>bullish</td>
+        </tr>
+        <tr>
+            <td><strong>ETH/USD</strong></td>
+            <td class="buy">BUY</td>
+            <td>$3620</td>
+            <td>$3850</td>
+            <td>$3480</td>
+            <td>78%</td>
+            <td>62</td>
+            <td>bullish</td>
+        </tr>
+        <tr>
+            <td><strong>XRP/USD</strong></td>
+            <td class="hold">HOLD</td>
+            <td>$2.45</td>
+            <td>$2.65</td>
+            <td>$2.25</td>
+            <td>65%</td>
+            <td>54</td>
+            <td>neutral</td>
+        </tr>
+        <tr>
+            <td><strong>SOL/USD</strong></td>
+            <td class="sell">SELL</td>
+            <td>$142.5</td>
+            <td>$128.0</td>
+            <td>$155.0</td>
+            <td>72%</td>
+            <td>71</td>
+            <td>bearish</td>
+        </tr>
+        <tr>
+            <td><strong>ADA/USD</strong></td>
+            <td class="buy">BUY</td>
+            <td>$0.98</td>
+            <td>$1.15</td>
+            <td>$0.88</td>
+            <td>68%</td>
+            <td>59</td>
+            <td>bullish</td>
+        </tr>
+    </table>
+    <div class="footer">
+        <p>⚠️ Disclaimer: These signals are generated for educational purposes only. Always conduct your own research and consult a financial advisor before trading.</p>
+        <p>Not financial advice. Past performance does not guarantee future results.</p>
+    </div>
 </body>
 </html>
