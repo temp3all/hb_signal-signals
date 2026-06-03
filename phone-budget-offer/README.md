@@ -36,5 +36,6 @@ Work starts after scope confirmation, visible payment, and materials.
 - Paseo mini-audit
 - DepsGuard mini-audit
 - Secluso mini-audit
+- Vivix mini-audit
 
 No fake claims, spam, review manipulation, account access, or ToS/anti-abuse bypass.
