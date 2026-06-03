@@ -37,5 +37,6 @@ Work starts after scope confirmation, visible payment, and materials.
 - DepsGuard mini-audit
 - Secluso mini-audit
 - Vivix mini-audit
+- Show HN founder research brief sample: `sample_founder_research_brief_show_hn_2026-06-03.md`
 
 No fake claims, spam, review manipulation, account access, or ToS/anti-abuse bypass.
