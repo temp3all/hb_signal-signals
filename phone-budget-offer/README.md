@@ -14,7 +14,7 @@ Send one GitHub repo, landing page, launch post, product description, or profile
 - 5 launch/social post hooks
 - trust/risk-reversal notes
 
-Price: **$50 equivalent in BTC**
+Price: **$15 quick pass** or **$50 full pack**, equivalent in BTC
 
 BTC: `1BL4eV82zZ64Dp4cj3s9EgJ3ae8xPx5ZuJ`
 
