@@ -27,6 +27,9 @@ Open an issue with:
 3. Action you want visitors to take
 4. Preferred tone
 5. Anything not to change
+6. BTC transaction ID after payment
+
+Fastest option: use `QUICK_PASS_FULFILLMENT.md` for the $15 quick-pass intake and exact deliverable format.
 
 Work starts after scope confirmation, visible payment, and materials.
 
